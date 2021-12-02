@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'ciclesemi';
+    src: url('../fonts/cicle_semi-webfont.woff2') format('woff2'),
+         url('../fonts/cicle_semi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#ad{
+	width:728px;
+	height:90px;
+	position:relative;
+	overflow: hidden;
+}
+
+.filmBackgroundTop{
+	height: 90px;
+	width: 27px;
+	top: 1px;
+	background-color:#297ced;
+	position: absolute;
+	display: block;
+	z-index: 3;
+}
+
+.background{
+	width:728px;
+	height:90px;
+	background-image:url(../images/background2.jpg);
+	position: absolute;
+	z-index: -5;
+}
+
+.film{
+	height:74px;
+	width:38px;
+	background-image:url(../images/film2.png);
+	top: 10px;
+	left: 25px;
+	position: absolute;
+	z-index: 3;
+}
+
+.filmstripTop{
+	height: 68px;
+	width: 666px;
+	background-image:url(../images/filmstripTop2.png);
+	top:10px;
+	left:50px;
+	position: absolute;
+	animation-name: roll1;
+	animation-duration: 2s;
+	animation-delay:1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	z-index: 2;
+}
+
+h1{
+	font-size:34px;
+	font-family: ciclesemi;
+	color: white;
+	position: absolute;
+	top: 12px;
+	left: 190px;
+	opacity: 0;
+	text-align: center;
+	animation: fadeIn 3s ease-in;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	z-index: 1;
+}
+
+#sharpprints{
+	width:200px;
+	height:34px;
+	top:50px;
+	left:265px;
+	position: absolute;
+	opacity: 0;
+	animation: fadeInThree 3s ease-in;
+	background-image:url(../images/sharpprints2.png);
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	z-index: 1; 
+}
+
+.button {
+	font-family: ciclesemi;
+	text-decoration: none;
+	color: black;
+	background:#fdc900;
+	padding:10px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	position: absolute;
+	top: 25px;
+	left: 585px;
+	border: none;
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+	animation-name: buttonAnimation;
+	animation-delay: 4s;	
+	animation-fill-mode: forwards;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: black;
+	background: #fff;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+@keyframes roll1{
+	from{ transform: translateX(0, 10) }
+	to{ transform: translateX(-550px)}
+}
+
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeInThree{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes buttonAnimation{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}

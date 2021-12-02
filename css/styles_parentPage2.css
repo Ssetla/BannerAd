@@ -1,0 +1,179 @@
+#adHolder{
+	width:728px;
+	height:90px;
+	background-color: #000;
+}
+
+
+@font-face {
+    font-family: 'ciclesemi';
+    src: url('../fonts/cicle_semi-webfont.woff2') format('woff2'),
+         url('../fonts/cicle_semi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	padding-top: 100px;
+	font-family: ciclesemi;
+	background-color: #222;
+	color: white;
+}
+
+header{
+	height: 100px;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0px;
+	left: 0px;
+	font-family: ciclesemi;
+}
+
+.container2{
+	width:978px;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+/*	background-color: rgba(255,0,0,.5);*/
+}
+
+h6{
+	float:left;
+	line-height: 100px;
+	font-size: 58px;
+	font-family: ciclesemi;
+/*	color: #fff;*/
+}
+
+h6 a{
+	text-decoration: none;
+	color: #fff;
+}
+
+h6:hover{
+	text-decoration: underline;
+	color: #e56709;
+}
+
+nav{
+	float: right;
+	height: 100%;
+}
+
+nav{
+	text-decoration: underline;
+	color: #e56709;
+}
+
+nav a:hover{
+	text-decoration:underline;
+	color: #e56709;
+}
+nav a{
+	float: left;
+	height: 38px;
+    width: 100px;
+    margin-left:30px;
+	padding-top: 50px;
+	font-size: 32px;
+	font-family: ciclesemi;
+	text-decoration: none;
+	color: #fff;
+}
+
+.container{
+	width:978px;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 100px;
+/*	background-color: rgba(255,0,0,.5);*/
+}
+
+#section1{
+	margin-top: 20px;
+}
+
+article{
+	width:978px;
+	/*float:left;*/
+	height:375px;
+	margin-right: 30px;
+}
+
+.bottomAd{
+	margin-left: auto;
+	margin-right: auto;
+	clear:both;
+	width:978px;
+}
+article p{
+	width: 540px;
+	font-size: 18px;
+	font-family: ciclesemi;
+	margin-top:30px;
+}
+
+
+body{
+	padding-top: 100px;
+	font-family: ciclesemi;
+	background-color: #222;
+	color: white;
+}
+
+header{
+	height: 100px;
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0px;
+	left: 0px;
+	font-family: ciclesemi;
+}
+
+.container2{
+	width:978px;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+/*	background-color: rgba(255,0,0,.5);*/
+}
+
+
+#ad{
+	width:728px;
+	margin-left: -60px;
+	margin-right: 30px;
+	float:left;
+	width:300px;
+	height:600px;
+	position:relative;
+	overflow: hidden;
+}
+
+
+.filmBackgroundTop{
+	height: 90px;
+	width: 27px;
+	top: 30px;
+	background-color:#297ced;
+	position: absolute;
+	display: block;
+	z-index: 3;
+
+}
+
+.background{
+	width:300px;
+	height:600px;
+	background-image:url(../images/background.jpg);
+	position: absolute;
+	z-index: -5;
+}

@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'ciclesemi';
+    src: url('../fonts/cicle_semi-webfont.woff2') format('woff2'),
+         url('../fonts/cicle_semi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#ad{
+	width:300px;
+	height:600px;
+	position:relative;
+	overflow: hidden;
+}
+
+
+.filmBackgroundTop{
+	height: 90px;
+	width: 27px;
+	top: 30px;
+	background-color:#297ced;
+	position: absolute;
+	display: block;
+	z-index: 3;
+
+}
+
+.background{
+	width:300px;
+	height:600px;
+	background-image:url(../images/background.jpg);
+	position: absolute;
+	z-index: -5;
+}
+
+.film{
+	height:96px;
+	width:49px;
+	background-image:url(../images/film.png);
+	top: 30px;
+	left: 25px;
+	position: absolute;
+	z-index: 3;
+}
+
+.filmstripTop{
+	height: 79px;
+	width: 1110px;
+	background-image:url(../images/filmstripTop.png);
+	top:35px;
+	left:74px;
+	position: absolute;
+	animation-name: roll1;
+	animation-duration: 3.5s;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	z-index: 2;
+}
+
+.filmstripMiddle{
+	height: 79px;
+	width: 880px;
+	background-image:url(../images/filmstripMiddle.png);
+	top:150px;
+	left:0px;
+	position: absolute;
+	animation-name: roll2;
+	animation-duration: 3s;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+h1{
+	font-size:38px;
+	font-family: ciclesemi;
+	color: white;
+	position: absolute;
+	top: 170px;
+	width: 300px;
+	text-align: center;
+	animation: fadeIn 3s ease-in;
+	animation-delay: 3s;
+	z-index: 1;
+}
+
+.filmstripBottom{
+	height: 79px;
+	width: 580px;
+	background-image:url(../images/filmstripBottom.png);
+	top:270px;
+	left:0px;
+	position: absolute;
+	animation-name: roll3;
+	animation-duration: 2s;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	z-index: 2;
+}
+
+h2{
+	font-size:38px;
+	font-family: ciclesemi;
+	letter-spacing: 1px;
+	color: white;
+	position: absolute;
+	letter-spacing: 1px;
+	top: 300px;
+	width: 300px;
+	text-align: center;
+	animation: fadeInTwo 4s ease-in;
+	animation-delay: 2s;
+	z-index: 1;
+}
+
+.filmstripLeader{
+	height: 79px;
+	width: 280px;
+	background-image:url(../images/filmstripLeader.png);
+	top:390px;
+	left:0px;
+	position: absolute;
+	animation-name: roll4;
+	animation-duration: 1s;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	z-index: 2;
+}
+
+#sharpprints{
+	width:230px;
+	height:39px;
+	top:400px;
+	left:25px;
+	position: absolute;
+	opacity: 0;
+	animation: fadeInThree 3s ease-in;
+	background-image:url(../images/sharpprints.png);
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	z-index: 1; 
+}
+
+.button {
+	font-family: ciclesemi;
+	text-decoration: none;
+	color: black;
+	background:#fdc900;
+	padding:10px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	position: absolute;
+	top: 500px;
+	left: 100px;
+	border: none;
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+	animation-name: buttonAnimation;
+	animation-delay: 6s;	
+	animation-fill-mode: forwards;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: black;
+	background: #fff;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+@keyframes roll1{
+	from{ transform: translateX(0, 10) }
+	to{ transform: translateX(-950px)}
+}
+
+@keyframes roll2{
+	from{ transform: translateX(0)}
+	to{ transform: translateX(-900px)}
+}
+
+@keyframes roll3{
+	from{ transform: translateX(0)}
+	to{ transform: translateX(-600px)}
+}
+
+@keyframes roll4{
+	from{ transform: translateX(0)}
+	to{ transform: translateX(-300px)}
+}
+
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeInTwo{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeInThree{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes buttonAnimation{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
